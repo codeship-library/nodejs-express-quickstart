@@ -1,5 +1,5 @@
 # NodeJS/Express Quickstart with Codeship Pro
-TODO -- build status
+[ ![Codeship Status for whiteotter/nodejs-express-quickstart](https://app.codeship.com/projects/2b8b3710-bc87-0135-8951-068e83625706/status?branch=master)](https://app.codeship.com/projects/259548)
 
 [NodeJS/Express Backend Todo app](http://todobackend.com/) configured for testing on [Codeship Pro](https://codeship.com/features/pro)
 
