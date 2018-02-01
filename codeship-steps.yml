@@ -6,4 +6,4 @@
   command: npm run lint
 - name: tests
   service: web-codeship-example-node
-  command: npm test -- --forceExit
+  command: /bin/sh -c "npm run migrate && npm test -- --forceExit" # bash wrapper not required unless passing along env variables or combining commands
