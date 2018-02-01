@@ -2,8 +2,8 @@
 # The build passes as long as every test step returns with a non-zero exit code.
 # See here for more: https://documentation.codeship.com/pro/builds-and-configuration/steps/
 - name: lint
-  service: web_codeship_example_node # our command will run on an instance of the `app` service that we've defined in the `codeship-services.yml` file
+  service: web-codeship-example-node # our command will run on an instance of the `app` service that we've defined in the `codeship-services.yml` file
   command: npm run lint
 - name: tests
-  service: web_codeship_example_node
-  command: bin/ci "npm test -- --forceExit"
+  service: web-codeship-example-node
+  command: /bin/sh -c "npm run migrate && npm test -- --forceExit" # bash wrapper not required unless passing along env variables or combining commands
